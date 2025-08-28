@@ -1,0 +1,1122 @@
+.form-body {
+  background-color: #f5f5f5;
+}
+/* Form title styling */
+.booking-from-header {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #22b5d6;
+  padding: 20px;
+  font-weight: bold;
+  width: 100%;
+  height: 200px;
+}
+
+.booking-from-header h2 {
+  margin-top: 100px;
+}
+
+/* Form subtitle styling */
+.booking-from-header p {
+  text-align: center;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Form container styling */
+.form-container {
+  max-width: 900px;
+  margin: 10px;
+  margin-left: 250px;
+  padding: 20px;
+  margin-top: 50px;
+  align-items: center;
+  height: auto;
+}
+
+/* Booking Form ....*/
+.booking-form,
+.media-selector {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Updated billboard-frame for centering */
+.billboard-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: 50px;
+  position: relative;
+}
+
+/* Container for each frame to position elements */
+.frame-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Place and size info styling */
+.place-info {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+/* CSS Changes */
+.upload-section {
+  height: 50px;
+}
+
+.file-input {
+  text-align: center;
+  padding: 8px;
+  width: 70%;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: rgba(247, 247, 247, 0);
+}
+
+.fullsize-span,
+.resize-span,
+.ok-span {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.fullsize-span:hover,
+.resize-span:hover,
+.ok-span:hover {
+  background-color: #0056b3;
+}
+
+.fixed-frame {
+  background-color: #333;
+  border: 5px solid #888;
+  width: 300px;
+  height: 800px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-content {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.media-content.full-size {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.media-content.resized {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.minimized-frame {
+  width: 100px;
+  height: 60px;
+  border: 2px solid #888;
+  background-color: #333;
+  margin: 4px auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 1px;
+}
+
+.mini-media-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* calender..*/
+.selected-dates {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.selected-days {
+  border: 1px solid black;
+  height: auto;
+  width: 170px;
+  display: flex;
+  padding: 20px;
+  margin: 10px;
+}
+
+.selected-dates ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.selected-dates li {
+  padding: 5px 0;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: center; /* प्रीवियस, मंथ, नेक्स्ट को सेंटर में लाने के लिए */
+  align-items: center;
+  gap: 10px; /* प्रीवियस, मंथ, और नेक्स्ट के बीच गैप */
+  margin-bottom: 10px;
+}
+
+.calendar-header div {
+  background-color:none;
+  color: rgb(12, 12, 12);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.calendar-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* बटनों के बीच गैप */
+  margin-bottom: 10px;
+  padding-bottom: 20px; /* ब्लैक लाइन को नीचे सरकाने के लिए */
+  border-bottom: 1px solid black;
+}
+
+.calendar-options div {
+  background-color: #2458c1ae;
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+  width: 80px;
+}
+
+.calendar-body {
+  display: flex;
+  flex-direction: column;
+  height: 250px; /* ऊँचाई को बढ़ाया ताकि स्क्रॉलर न आए */
+}
+
+.calendar-week {
+  height: 40px;
+  display: flex;
+  justify-content: flex-start; /* दिनों को बाईं ओर से शुरू करने के लिए */
+}
+
+.calendar-day {
+  width: 51px; /* दिन की चौड़ाई को समायोजित किया ताकि पूरी चौड़ाई कवर हो */
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px; /* गैप को और बढ़ाया ताकि खुले-खुले दिखें */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #0b010f;
+  font-size: 14px; /* फ़ॉन्ट साइज़ को कम किया */
+}
+
+.calendar-day.today {
+  border: 2px solid blue;
+}
+
+.calendar-day.selected {
+  background-color: #28a745;
+  color: rgb(244, 239, 239);
+}
+
+.calendar-day.empty {
+  background-color: #f5f5f5;
+}
+
+.calendar-day.unselectable {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.calendar-container {
+  width: 100%;
+  position: relative;
+}
+
+.calendar-input-box {
+  display: flex;
+  flex-direction: column; /* ताकि कैलेंडर नीचे दिखे */
+  margin-left: -10px;
+  margin-right: 0; /* राइट मार्जिन को हटाया ताकि कैलेंडर पूरी तरह राइट में सटे */
+  border: 1px solid #0000006a;
+  padding: 0px;
+  background: #fff;
+  transition: height 0.3s ease; /* ऊँचाई बदलने के लिए स्मूथ ट्रांज़िशन */
+  height: 40px; /* डिफ़ॉल्ट ऊँचाई */
+  width:895px;
+}
+
+.calendar-input-box.open {
+  height: 449px;
+}
+
+.calendar-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selected-dates-display {
+  flex: 1;
+  margin-right: 10px;
+  font-size: 17px;
+  color: #333333b7;
+}
+
+.calendar-icon {
+  font-size: 20px; /* आइकन का साइज़ */
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative; /* z-index के लिए */
+  z-index: 10; /* आइकन को कैलेंडर के आगे लाने के लिए */
+}
+
+.calendar-content {
+  width: 400px; /* कैलेंडर की चौड़ाई */
+  margin-top: -115px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 1px;
+  box-sizing: border-box; /* बॉक्स की सीमा के अंदर फिट करने के लिए */
+  margin-left: auto; /* राइट साइड में अलाइन करने के लिए */
+  margin-right: 0; /* राइट साइड से पूरी तरह सटाने के लिए */
+  border: 1px solid #0000006a; /* चारों ओर बॉर्डर */
+  z-index: 5; /* कैलेंडर को आइकन के पीछे रखने के लिए */
+}
+
+/* New Styles for Custom Date Selection */
+.custom-date-selection {
+  width: 400px; /* Increased width for larger boxes */
+  position: relative;
+}
+
+/* Add header text using ::before */
+.custom-date-selection::before {
+  content: "* if you want to show ads for a fixed period from a specific date then you can select that date and duration from here.";
+  display: block;
+  font-size: 12px;
+  color: #4b4a4a; 
+  margin-bottom: 10px;
+}
+
+.custom-date-boxes {
+  display: flex; /* Use flex for separate boxes */
+  flex-direction: row; /* Arrange boxes horizontally */
+  gap: 0px; /* Space between boxes */
+  margin-left: 10px; /* Increased margin to shift boxes further inward */
+}
+
+.custom-date-box {
+  position: relative;
+  flex: 1; /* Ensure boxes take equal width */
+  border: 1px solid #ccc; /* Add border to each box */
+  border-radius: 0px; /* Rounded corners */
+}
+
+.custom-date-box input {
+  width: 100%;
+  padding: 5px;
+  border: none; /* Ensure no border */
+  border-radius: 5px;
+  color: #000;
+  box-sizing: border-box;
+  background-color: #fff; /* Match dropdown-header background */
+  text-align: center; /* Match dropdown-header text alignment */
+  cursor: pointer; /* Match dropdown-header cursor */
+}
+
+.dropdown-header {
+  padding: 5px;
+  border: none; /* Remove default border */
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #2a2929a5;
+  text-align: center;
+  width: 150px;
+  box-sizing: border-box;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  z-index: 10;
+  overflow-y: hidden; /* Remove scrollbars */
+}
+
+.dropdown-content div {
+  padding: 5px;
+  cursor: pointer;
+  color: #000;
+  text-align: center;
+}
+
+.dropdown-content div:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .calendar-content-wrapper {
+    flex-direction: column;
+  }
+
+  .custom-date-selection {
+    width: 100%;
+  }
+
+  .custom-date-boxes {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    gap: 10px;
+    margin-left: 0; /* Reset margin for smaller screens */
+  }
+
+  .calendar-content {
+    width: 100%;
+  }
+
+  .calendar-input-box.open {
+    height: auto;
+  }
+}
+/* daySlots.....*/
+.selected-slots-box {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #d2e906;
+  border-radius: 4px;
+  background-color: #f5ed06;
+}
+
+.selected-slots h3 {
+  margin: 0;
+}
+
+.selected-slot-item {
+  padding: 5px;
+  margin: 2px 0;
+  background-color: #e1e1e1;
+  border-radius: 3px;
+}
+
+/* Style for AM/PM to reduce size */
+.time-period {
+  font-size: 0.7em;
+  vertical-align: middle;
+}
+
+/* Time container */
+.timep {
+  margin: 10px;
+}
+
+/* Select Slot heading */
+.timep h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+}
+
+/* Updated dayss and day styling */
+.dayss {
+  width: auto;
+  display: flex;
+  gap: 0;
+}
+
+.day {
+  border: 1px solid black;
+  width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-right: none;
+}
+
+/* Add right border to the last .day */
+.day:last-child {
+  border-right: 1px solid black;
+}
+
+/* Slot container */
+.slot {
+  margin-bottom: 5px;
+}
+
+.slot h4 {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+}
+
+/* Select All row */
+.select-all-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Select All label */
+.select-all-label {
+  flex-grow: 1;
+  margin: 0;
+}
+
+/* Slot row for time slots */
+.slot-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for slot-row */
+
+/* Time label styling */
+.time-label {
+  flex-grow: 1;
+  margin: 0;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Checkbox container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Checkbox styling */
+.dayslot {
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  border-radius: 0;
+}
+
+.dayslot:checked {
+  background-color: blue;
+}
+
+.dayslot:checked::after {
+  content: "✔";
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+}
+
+/* Select All checkbox */
+.select-all-checkbox {
+  margin-left: 5px;
+}
+
+/* Booking Form */
+.file {
+  border: 1px solid rgba(0, 0, 0, 0.345);
+  height: auto;
+  width: 98%;
+  margin: 5px;
+}
+
+.form-container {
+  margin: 10px;
+  margin-top: 40px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 920px;
+}
+
+.input-box {
+  margin: 10px;
+  width: 870px;
+  margin-bottom: 16px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+.timetoggle {
+  width: 895px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  position: relative; /* For positioning the icon */
+}
+
+.form-container1 {
+  box-shadow: 2px 2px 4px 7px rgba(0, 0, 0, 0.388);
+  border-radius: 2px;
+  float: right;
+  width: 400px;
+  padding: 30px;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  height: auto;
+  margin-top: -500px;
+  background-color: rgba(165, 42, 42, 0.127);
+}
+
+/* area... */
+.selected-areas-box {
+  padding: 10px;
+  background-color: #fff;
+  height: 1px;
+}
+
+.selected-areas-box ul {
+  margin-top: 17px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.selected-areas-box li {
+  margin-bottom: 5px;
+}
+
+.dropdown-toggle {
+  float: right;
+  margin-top: 100;
+  font-size: 25px;
+  margin-right: 8px;
+  width: 50px;
+  height: 30px;
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}
+
+.a1 {
+  background-color: #fff;
+  width: 100%;
+}
+
+.a2 {
+  float: left;
+}
+
+.areaselect {
+  margin: 10px;
+  position: relative;
+  width: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.516);
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.locationicon {
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+  float: right;
+  width: 20px;
+  color: #0b010f;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.arealist {
+  list-style: none;
+  padding: 0;
+}
+
+#b1 {
+  width: 200px;
+  float: left;
+  display: flex;
+}
+
+.arealist label {
+  width: 200px;
+  float: right;
+  display: flex;
+}
+
+.myLocation {
+  border: 1px solid black;
+  height: auto;
+}
+
+/* Submit button को Next button में बदला और सेंटर किया */
+.next-button {
+  background-color: #1e34d8ee;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  display: block; /* सेंटर करने के लिए */
+  margin: 20px auto; /* ऑटो मार्जिन से सेंटर में लाया */
+}
+
+.next-button:hover {
+  background-color: #0707f0;
+}
+
+/* नया जोड़ा गया: Terms section की स्टाइलिंग */
+.terms-section {
+  margin: 20px 10px;
+}
+
+.terms-line {
+  border: 1px solid #827c7cfa;
+  margin-bottom: 10px;
+}
+
+.terms-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.custom-checkbox {
+  margin: 0 10px 0 0;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  border-radius: 0;
+}
+
+.custom-checkbox:checked {
+  background-color: blue !important;
+}
+
+.custom-checkbox:checked::after {
+  content: "✔";
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+}
+
+/* book form close.. */
+.book {
+  
+  width: 1100px;
+  height: 900px;
+  margin: 10px;
+}
+
+.headingbook {
+  background-color: hsla(215, 15%, 56%, 0);
+  color: #fff;
+  box-shadow: 5px 4px 4px 4px rgb(85, 81, 81);
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  margin-left: 610px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.inputbox {
+  margin: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-left: 200px;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid black;
+  width: 950px;
+  height: 30px;
+  align-items: center;
+  box-shadow: 4px 4px 5px 4px rgba(110, 106, 123, 0.489);
+}
+
+select {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.btn {
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  background-color: black;
+  color: #fff;
+  font-size: 20px;
+  margin: 15px;
+  margin-left: 600px;
+  border-radius: 2px;
+  box-shadow: 4px 4px 5px 4px rgba(15, 4, 56, 0.489);
+}
+
+.weekday {
+  border: 1px solid black;
+  width: 200px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 300px;
+}
+
+.weekday h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: brown;
+  text-align: center;
+}
+
+.dayss {
+  width: auto;
+  display: flex;
+  gap: 0;
+}
+
+.day {
+  border: 1px solid black;
+  width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-right: none;
+}
+.day:hover {
+  color: brown;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+/* Add right border to the last .day */
+.day:last-child {
+  border-right: 1px solid black;
+}
+
+.slot {
+  margin: 1px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 0;
+}
+
+.slot h4 {
+  margin: 10px;
+}
+
+.weekday .active {
+  width: 100px;
+  background-color: rgb(116, 161, 203);
+}
+
+.dayslot {
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  border-radius: 0;
+}
+
+.headsslot {
+  padding-left: 5px;
+  padding-top: 15px;
+  font-size: 17.8px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #282727ad;
+}
+
+.dayslot:checked {
+  background-color: blue;
+}
+
+.dayslot:checked::after {
+  content: "✔";
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+}
+
+#slecetctdata {
+  border: solid 1px rgba(0, 0, 0, 0.345);
+  width: 895px;
+  background-color: #fff;
+}
+
+#slecetctdata ul {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.headslot {
+  padding-left: 2px;
+  padding-top: 30px;
+  font-size: 17.8px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #282727ad;
+}
+
+.Location {
+  border: 1px solid black;
+  margin: 10px;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeinput {
+  width: 900px;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+}
+
+.time1 {
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 50px;
+  height: 40px;
+  border: 1px solid black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.timep {
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.timep h2 {
+  color: brown;
+}
+
+/* Updated styles for side-by-side slot display */
+.slot-group-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.myslot {
+  box-sizing: border-box;
+  padding: 5px;
+  width: auto;
+  flex: 1; /* Equal width for each group */
+}
+
+.myslot strong {
+  font-size: 16px;
+  color: #333;
+}
+
+.myslot ul {
+  list-style-type: disc;
+  margin: 5px 0;
+  padding-left: 20px;
+}
+
+.myslot li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.mytime {
+  text-align: center;
+}
+
+.mytime1 {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* file,video... */
+input[type="file"] {
+  margin: 10px 0;
+}
+
+img[alt="Selected Thumbnail"] {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+img[alt="Large Preview"] {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.vfp {
+  display: flex;
+  height: auto;
+  margin: 10px;
+}
+
+.vf1 {
+  margin: 10px;
+}
+
+.vf2 {
+  border: 1px solid black;
+  margin-top: -60px;
+  margin-left: 400px;
+}
+
+.vf2 p {
+  display: none;
+}
+
+/* New styles for place boxes */
+.place-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  margin: 0px;
+  border: 1px solid #2c2a2a4d;
+  border-radius: 1px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 700px;
+  margin-left: 10px;
+}
+
+.place-box:hover {
+  background-color: #b7b9bc5d;
+}
+
+.place-box label {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333;
+  flex-grow: 1;
+}
+
+.place-box span {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+/* Remove conflicting styles */
+.place-box input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+/* Custom checkbox styling to match Select Slot */
+.custom-checkbox {
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  border-radius: 0;
+}
+
+.custom-checkbox:checked {
+  background-color: blue !important;
+}
+
+.custom-checkbox:checked::after {
+  content: "✔";
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+}

@@ -1,0 +1,95 @@
+/* Main Container */
+.about-container {
+  width: auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Yellow Header Section */
+.about-header {
+  background-color: #e9e766;
+  padding: 40px 20px;
+  height: 300px;
+}
+
+.about-header h2 {
+  font-size: 28px;
+  margin-top: 100px;
+  color: rgb(13, 13, 13);
+}
+
+.about-header p {
+  font-size: 18px;
+  color: #1d1d1d;
+}
+
+/* Content Section */
+.about-content {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+/* Image Section */
+.about-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.about-images img:first-child, .about-images img:last-child {
+  width: 200px;
+  height: 140px;
+  margin-top: -100px;
+}
+
+
+.about-images img {
+  width: 220px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: fill;
+  box-shadow: 2px 2px 10px hsla(0, 0%, 0%, 0.412);
+  margin-top: -120px;
+}
+
+/* Text Section */
+.about-text {
+  max-width: 1200px;
+  margin: auto;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+  width: 100%;
+}
+
+/* Left-aligned text with right-side images */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 40px auto;
+  
+}
+
+.about-left-text, .about-right-text {
+  width: 55%;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.about-right-image img, .about-left-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: fill;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
+}
+
+/* Reverse Section */
+.reverse {
+  flex-direction: row-reverse;
+}

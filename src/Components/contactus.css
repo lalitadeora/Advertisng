@@ -1,0 +1,297 @@
+
+.contact-us-container {
+  font-family: Arial, sans-serif;
+  color: #f37474;
+  width: auto;
+  min-height: 100vh;
+ 
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* हेडर सेक्शन स्टाइल */
+.contact-header {
+  text-align: center;
+  background: #20c997;
+ 
+  padding: 20px;
+  width: auto;
+  height: 200px;
+ 
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-top: 130px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.c-i-t {
+  background-color: #f9f9f9;
+  height: 180px; /* Height कम की गई */
+  
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+.contact-info-tab {
+  display: inline-block;
+  background-color: #f9f9f9;
+  /* Padding कम की */
+  border-radius: 8px;
+  margin: 10px 0; /* Margin कम किया */
+  border: 2px solid #000b2e;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  font-size: 15px; /* Font size adjust किया */
+  color: #000;
+  
+}
+
+.contact-info-tab .dot {
+  font-size: 10px; /* Yellow dots छोटे किए */
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 5px 0; /* Gap कम किया */
+}
+
+.contact-red {
+  color: red;
+  padding-right: 5px;
+}
+
+.contact-black {
+  font-weight: bold;
+  color: black;
+}
+
+.contact-text {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.3; /* Line height कम की */
+  margin-top: 0;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 80px;
+  background-color: #f9f9f9;
+  margin-inline:0px;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 10px;
+  width: 250px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.contact-box-icons {
+  height: 40px;
+  width: 40px;
+  margin-right: -10px;
+  margin-bottom: 55px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column; 
+}
+
+.contact-box h3 {
+  color: #100f0f;
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+  font-weight: normal;
+  text-align: center;
+padding-bottom: 0px;
+width: 150px;
+display: inline-block;
+}
+
+.contact-box h1 {
+  color: #f50606;
+  font-size: 1.1rem; 
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2px;
+  line-height:1.1;
+  padding-top: 0px;
+  display: inline-block;
+  width: 150px;
+}
+
+.highlight-text {
+  color: #f1e506;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.contact-box p {
+  margin: 2px 0;
+  color: #080808;
+  font-size:0.95rem;
+  text-align:left;
+}
+
+/* फूटर सेक्शन - सोशल मीडिया और फॉर्म */
+/* पूरा बैकग्राउंड अब स्क्रीन के दोनों किनारों तक फैलेगा */
+.contact-footer {
+  background-color: #f9f9f9;
+  width: 1600px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  background: #dcdcdc; /* पूरा बैकग्राउंड ग्रे रहेगा */
+  padding: 40px;
+  border-radius: 10px;
+  height: 300px;
+}
+
+/* सोशल मीडिया सेक्शन */
+.social-section {
+  text-align: center;
+  width: 30%;
+}
+.we-also {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 25px;
+}
+.available-on {
+font-weight: bold;
+color: #000;
+font-size: 25px;
+}
+/* सोशल आइकन्स के पीछे सफेद पट्टी */
+.icons-bg {
+  background: white;
+ width: 300px;
+ height: 55px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px; /* Icons के बीच का gap कम किया */
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+}
+
+/* सभी आइकन्स समान आकार में होंगे */
+.social-icons {
+  width: 50px !important; /* Fix icon width */
+  height: 50px !important; /* Fix icon height */
+  filter: brightness(1.1); /* मोटाई बढ़ाने के लिए हल्का ब्राइट किया */
+  border-radius: 1px; /* Rounded icons */
+  display: inline-block; /* Proper alignment */
+}
+
+/* Gmail icon को बाकी icons के बराबर किया */
+.social-icons:last-child {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+/* "FOR", "24*7" और "to assist you" के बीच का gap और कम किया */
+.assist-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  line-height: 15px; /* Text spacing को कम किया */
+  margin-top: -5px; /* Top margin हटाया */
+  gap: 4px;
+}
+
+.red {
+   color: rgb(11, 11, 11); 
+   font-weight: bold;
+  }
+.blue { color: blue;
+  margin-top: -5px; 
+  font-size: 30px;
+  font-weight: bold;
+}
+.black {
+   color: black;
+   margin-top: -15px;
+   }
+
+/* इमेज सेक्शन */
+.contact-image {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  margin-left: -300px;
+  margin-top: 25px;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* फॉर्म सेक्शन */
+.form-section {
+  width: 30%;
+  text-align: center;
+  margin-right: 200px;
+}
+.reach{
+  color: #f50606;
+}
+.form-section h2 {
+  font-size: 22px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+}
+
+form textarea {
+  resize: none;
+  height: 70px;
+}
+
+
+#sub-btn{
+  background-color: rgb(255, 11, 11);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+margin:auto;
+}
+

@@ -1,0 +1,370 @@
+.payment-container {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.total-amount-section {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #e6f0fa00; /* Light blue background to match the design */
+  border: 1px solid #007bff00; /* Blue border to match the design */
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px; /* Match the max-width of method-details */
+}
+
+.total-amount-section h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.payment-methods {
+  width: 30%; /* Left side: 30% of the screen */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  height: calc(100vh - 40px); /* Full height minus padding */
+  overflow-y: auto;
+}
+
+.payment-methods h2 {
+  font-size: 1rem;
+  color: #393d37;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border: 1px solid #38f405;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  width: 300px;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.method-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0px 0;
+  background-color: #fff;
+  border: 1px solid #807e7e;
+  border-radius: 0px;
+  cursor: pointer;
+  height: 40px;
+}
+
+.method-option:hover {
+  background-color: #f1f1f1;
+}
+
+.method-option.selected {
+  background-color: #e6f0fa;
+  border-color: #007bff;
+}
+
+.method-content {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Ensure content takes available space */
+}
+
+/* Separate CSS classes for each icon */
+.method-icon {
+  margin-right: 10px;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.net-banking-icon {
+  width: 84px;
+  height: 80px;
+  margin-left: -5px;
+}
+
+.card-icon {
+  width: 84px;
+  height: 50px;
+  margin-left: -20px;
+}
+
+.qr-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.wallet-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.upi-icon {
+  width: 74px;
+  height: 74px;
+  margin-left: -10px;
+}
+
+.cash-icon {
+  width: 74px;
+  height: 74px;
+  margin-left: -15px;
+}
+
+.method-option span {
+  font-size: 1rem;
+  color: #444;
+  flex: 1; /* Ensure text takes remaining space */
+  text-align: end;
+}
+
+.payment-details-section {
+  width: 70%; /* Right side: 70% of the screen */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  height: calc(100vh - 40px); /* Full height minus padding */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column; /* Ensure vertical stacking */
+  align-items: center; /* Center content horizontally */
+}
+
+.method-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Increased max-width for better layout */
+}
+
+.method-details h3 {
+  font-size: 1.1rem;
+  color: #3d3737;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.dropdown {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.dropdown select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #666;
+}
+
+.bank-logos {
+  display: flex;
+  gap: 0; /* Removed gap between boxes */
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bank-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 180px; /* Increased width (keeping ratio 15:8) */
+  height: 96px; /* Increased height (keeping ratio 15:8) */
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Light shadow */
+}
+
+.bank-logo-container:hover {
+  background-color: #f1f1f1;
+}
+
+.bank-logo-container.selected {
+  background-color: #e6f0fa;
+  border-color: #007bff;
+}
+
+.bank-logo {
+  width: 144px; /* Increased size to fit the box (keeping ratio 15:8) */
+  height: 72px; /* Increased size to fit the box (keeping ratio 15:8) */
+  object-fit: contain;
+}
+
+.method-details input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.card-details {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.card-details .expiry,
+.card-details .cvv {
+  width: 50%;
+}
+
+.qr-placeholder {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.proceed-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff7f50; /* Coral color as per image */
+  color: #fff;
+}
+
+.proceed-button:hover {
+  background-color: #ff6347;
+}
+
+.cash-payment {
+  width: 100%;
+}
+
+.otp-section {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.otp-section input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+  color: #666;
+}
+
+.verify-button,
+.resend-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.verify-button {
+  background-color: #ff7f50; /* Coral color as per image */
+  color: #fff;
+}
+
+.verify-button:hover {
+  background-color: #ff6347;
+}
+
+.resend-button {
+  background-color: #ff7f50;
+  color: #fff;
+}
+
+.resend-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.resend-button:hover:not(:disabled) {
+  background-color: #ff6347;
+}
+
+.timer {
+  font-size: 1rem;
+  color: #666;
+}
+
+.otp-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.otp-links span {
+  font-size: 0.9rem;
+  color: #007bff;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.otp-links span:hover {
+  text-decoration: underline;
+}
+
+.payment-error {
+  text-align: center;
+  padding: 50px 20px;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.payment-error h2 {
+  font-size: 2rem;
+  color: #ff4444;
+  margin-bottom: 20px;
+}
+
+.payment-error p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.payment-success {
+  text-align: center;
+}
+
+.payment-success h3 {
+  color: #28a745;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.payment-success p {
+  color: #666;
+  font-size: 1rem;
+}

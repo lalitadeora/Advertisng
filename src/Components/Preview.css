@@ -1,0 +1,220 @@
+.preview-container {
+  width: 100vw; /* पूरी चौड़ाई */
+  min-height: 100vh; /* पूरी ऊंचाई */
+  margin: 0;
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(8, 8, 8, 0.952);
+  box-sizing: border-box; /* पैडिंग को चौड़ाई में शामिल करें */
+}
+
+.preview-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.preview-header h1 {
+  font-size: 2.5rem;
+  color: #22b5d6;
+  margin-bottom: 10px;
+}
+
+.preview-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.preview-section {
+  margin-bottom: 30px;
+}
+
+.preview-section h2 {
+  font-size: 1.2rem;
+  color: #3d3737;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  margin-left: 90px;
+}
+
+/* Booking Table Styling */
+.booking-table {
+  width: 90%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking-table th,
+.booking-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.booking-table th {
+  background-color: #fff;
+  color: #121212;
+  font-weight: bold;
+  width: 30%;
+}
+
+.booking-table td {
+  color: #444;
+}
+
+.booking-table ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.booking-table li {
+  margin-bottom: 5px;
+  padding-left: 0;
+  position: relative;
+}
+
+.booking-table li::before {
+  content: none;
+}
+
+/* Slot Group Styling */
+.slot-group {
+  margin-bottom: 15px;
+}
+
+.slot-group-title {
+  font-weight: bold;
+  color: #121212;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.slot-times {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slot-time-item {
+  padding: 5px 10px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Price Table Styling */
+.price-table {
+  width: 90%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price-table th,
+.price-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.price-table th {
+  background-color: #fff;
+  color: #0c0c0c;
+  font-weight: bold;
+  width: 50%;
+}
+
+.price-table td {
+  color: #3d3232;
+}
+
+.price-table .total-amount-row th,
+.price-table .total-amount-row td {
+  font-size: 1rem;
+  color: #0d0d0d;
+}
+
+/* Action Buttons */
+.preview-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 5%;
+}
+
+.back-button,
+.pay-button {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.back-button {
+  background-color: #007bff;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.pay-button {
+  background-color: #28a745;
+}
+
+.pay-button:hover {
+  background-color: #218838;
+}
+
+.preview-error {
+  text-align: center;
+  padding: 50px 20px;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.preview-error h2 {
+  font-size: 2rem;
+  color: #ff4444;
+  margin-bottom: 20px;
+}
+
+.preview-error p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Media Preview Styling */
+.media-preview {
+  display: inline-block;
+}
+
+.media-preview img,
+.media-preview video {
+  border-radius: 5px;
+  object-fit: cover;
+  width: 70px;
+  height: 50px;
+}
+
+/* Total Days Styling */
+.total-days {
+  color: #ff0000; /* लाल रंग */
+  font-size: 1rem;
+  margin-top: 5px;
+}
